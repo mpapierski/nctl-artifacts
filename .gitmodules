@@ -1,0 +1,6 @@
+[submodule "v1.4.5"]
+	path = v1.4.5
+	url = https://github.com/casper-network/casper-node
+[submodule "v1.3.0"]
+	path = v1.3.0
+	url = https://github.com/casper-network/casper-node
