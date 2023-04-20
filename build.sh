@@ -33,10 +33,10 @@ for VERSION in "${VERSIONS[@]}";
 do
     mkdir -p ${ARTIFACTS_DIR}/${VERSION}
     pushd $VERSION
-    # cargo build --release -p casper-node
+    cargo build --release -p casper-node
+    cargo build --release -p global-state-update-gen
     cp ./target/release/casper-node ${ARTIFACTS_DIR}/${VERSION}/
     cp ./target/release/global-state-update-gen ${ARTIFACTS_DIR}/${VERSION}/
-    # cargo build --release -p global-state-update-gen
     popd
 done
 
